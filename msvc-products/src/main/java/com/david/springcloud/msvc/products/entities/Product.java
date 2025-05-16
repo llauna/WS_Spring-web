@@ -20,10 +20,14 @@ public class Product {
     private LocalDate createAt;
 
     @Transient
-    private int port;
+    private Integer port;
 
-    public void setPort(int port) {
+    public void setPort(Integer port) {
         this.port = port;
+    }
+
+    public Integer getPort() {
+        return port;
     }
 
     public Long getId() {
@@ -58,6 +62,4 @@ public class Product {
         this.createAt = createAt;
     }
 
-    
-    
 }

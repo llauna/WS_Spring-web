@@ -14,13 +14,13 @@ import java.util.stream.Collectors;
 
 @Service
 public class ItemServiceFeign implements ItemService {
+
     @Autowired
     private ProductFeignClient client;
 
     @Override
     public List<Item> findAll() {
-        return client.findAll()
-                .stream()
+        return client.findAll().stream()
                 .map( product -> new Item(product,new Random().nextInt(10) +1 ))
                 .collect(Collectors.toList());
     }

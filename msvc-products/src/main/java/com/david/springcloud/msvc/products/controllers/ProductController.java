@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.david.springcloud.msvc.products.entities.Product;
 import com.david.springcloud.msvc.products.services.ProductService;
 
-import java.util.List;
 import java.util.Optional;
 
 import org.springframework.http.ResponseEntity;

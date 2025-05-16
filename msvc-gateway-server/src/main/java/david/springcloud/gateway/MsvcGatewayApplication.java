@@ -1,11 +1,13 @@
-package com.david.springcloud.msvc.products;
+package david.springcloud.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MsvcProductsApplication {
+public class MsvcGatewayApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(MsvcProductsApplication.class, args);
+        SpringApplication.run(MsvcGatewayApplication.class, args);
     }
+
 }
